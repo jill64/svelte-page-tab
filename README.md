@@ -1,2 +1,2 @@
-# svelte-page-tab
-🎹 Tab menu component that treats pages as states
+<!----- BEGIN GHOST DOCS HEADER ----->
+<!----- END GHOST DOCS HEADER ----->
