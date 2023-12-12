@@ -1,6 +1,6 @@
 {
   "name": "svelte-page-tab",
-  "description": "",
+  "description": "🎹 Tab menu component that uses page as a state",
   "version": "0.0.1",
   "main": "dist/index.js",
   "type": "module",
@@ -44,15 +44,24 @@
     "typescript": "5.3.3",
     "vite": "5.0.8"
   },
-  "homepage": "",
+  "homepage": "https://github.com/jill64/svelte-page-tab#readme",
   "author": {
-    "name": "",
-    "image": "",
-    "url": ""
+    "name": "jill64",
+    "email": "143883742+jill64@users.noreply.github.com",
+    "url": "https://github.com/jill64",
+    "image": "https://avatars.githubusercontent.com/u/143883742?v=4"
   },
   "repository": {
     "type": "git",
-    "url": "",
-    "image": ""
-  }
+    "url": "https://github.com/jill64/svelte-page-tab.git",
+    "image": "https://opengraph.githubassets.com/437d9743870f8c2540b5942cfaa37781b455e95c8853c81c1053a2db41656b67/jill64/svelte-page-tab"
+  },
+  "license": "MIT",
+  "bugs": "https://github.com/jill64/svelte-page-tab/issues",
+  "keywords": [
+    "menu",
+    "routing",
+    "svelte",
+    "tab"
+  ]
 }
