@@ -29,7 +29,13 @@ test('smoke', async ({ page }) => {
     page.getByText(`Current location : ${origin}/page3`)
   ).toBeVisible()
 
-  await page.getByRole('link', { name: 'Root' }).click()
+  await page.getByRole('link', { name: 'Section 1' }).click()
+
+  await expect(
+    page.getByText(`Current location : ${origin}/page3/section1`)
+  ).toBeVisible()
+
+  await page.getByRole('link', { name: 'Top' }).click()
 
   await expect(page.getByText(`Current location : ${origin}/`)).toBeVisible()
 })
