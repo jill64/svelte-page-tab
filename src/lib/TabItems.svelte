@@ -1,22 +1,27 @@
 <script lang="ts">
   import { page } from '$app/stores'
 
-  export let list: {
-    href: string
-    label: string
-  }[]
+  /** Map<href, label> */
+  export let routes: Map<string, string>
 
-  $: current = $page.url.origin + $page.url.pathname
+  export let prefix = ''
 
-  $: isCurrent = (href: string) => {
+  $: mapped = [...routes.entries()].map(([href, label]) => [prefix + href, label])
+
+  $: spec = [...mapped].sort(([a], [b]) => {
+    const depth = b.split('/').length - a.split('/').length
+    return depth === 0 ? b.length - a.length : depth
+  })
+
+  $: matched = spec.find(([href]) => {
     const dist = new URL(href, $page.url.href)
-    return current === dist.origin + dist.pathname ? true : null
-  }
+    return $page.url.href.startsWith(dist.origin + dist.pathname)
+  })?.[0]
 </script>
 
-{#each list as { href, label }}
+{#each mapped as [href, label]}
   <li>
-    <a {href} data-current-location={isCurrent(href)}>
+    <a {href} data-current-location={href === matched ? true : null}>
       <slot {label}>
         {label}
       </slot>
