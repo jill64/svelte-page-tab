@@ -2,31 +2,24 @@
   import { page } from '$app/stores'
   import { TabItems } from '$lib'
   import { Layout } from '@jill64/npm-demo-layout'
-  import { HighlightSvelte } from '@jill64/npm-demo-layout/highlight'
   import README from '../../README.md?raw'
   import packageJson from '../../package.json'
-  import { code } from './code'
 </script>
 
 <Layout {packageJson} {README}>
+  <p>
+    Current location : {$page.url.href}
+  </p>
   <ul>
     <TabItems
-      list={[
-        { href: '/', label: 'Root' },
-        { href: '/page1', label: 'Page 1' },
-        { href: '/page2', label: 'Page 2' },
-        { href: '/page3', label: 'Page 3' }
-      ]}
+      routes={new Map([
+        ['/', 'Top'],
+        ['/page1', 'Page 1'],
+        ['/page2', 'Page 2'],
+        ['/page3', 'Page 3']
+      ])}
     />
   </ul>
-  <main>
-    <output>
-      Current location : {$page.url.href}
-    </output>
-    <div style:font-size="large" style:overflow-x="auto">
-      <HighlightSvelte {code} />
-    </div>
-  </main>
   <slot />
 </Layout>
 
@@ -38,7 +31,7 @@
     padding: 0;
     margin-bottom: 1rem;
   }
-  ul :global(li) {
+  :global(ul li) {
     display: contents;
   }
   ul :global(a) {
@@ -52,16 +45,16 @@
     font-weight: bold;
     border-bottom: 2px solid rebeccapurple;
   }
-  ul :global(a):hover {
+  :global(ul a):hover {
     background: rgba(0, 0, 0, 0.1);
   }
-  ul :global(a):active {
+  :global(ul a):active {
     background: rgba(0, 0, 0, 0.2);
   }
-  :global(.dark) ul :global(a):hover {
+  :global(.dark ul a):hover {
     background: rgba(255, 255, 255, 0.1);
   }
-  :global(.dark) ul :global(a):active {
+  :global(.dark ul a):active {
     background: rgba(255, 255, 255, 0.2);
   }
 </style>
