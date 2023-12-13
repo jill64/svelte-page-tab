@@ -5,12 +5,12 @@ export const code = /* html */ `
 
 <ul>
   <TabItems
-    list={[
-      { href: '/', label: 'Root' },
-      { href: '/page1', label: 'Page 1' },
-      { href: '/page2', label: 'Page 2' },
-      { href: '/page3', label: 'Page 3' }
-    ]}
+    routes={new Map([
+      ['/', 'Top'],
+      ['/page1', 'Page 1'],
+      ['/page2', 'Page 2'],
+      ['/page3', 'Page 3']
+    ])}
   />
 </ul>
 
