@@ -6,7 +6,10 @@
 
   export let prefix = ''
 
-  $: mapped = [...routes.entries()].map(([href, label]) => [prefix + href, label])
+  $: mapped = [...routes.entries()].map(([href, label]) => [
+    prefix + href,
+    label
+  ])
 
   $: spec = [...mapped].sort(([a], [b]) => {
     const depth = b.split('/').length - a.split('/').length
