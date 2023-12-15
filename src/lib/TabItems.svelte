@@ -31,3 +31,13 @@
     </a>
   </li>
 {/each}
+
+<style>
+  li {
+    display: contents;
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+</style>
