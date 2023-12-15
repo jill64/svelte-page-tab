@@ -27,22 +27,19 @@
   ul {
     display: flex;
     flex-wrap: wrap;
-    list-style: none;
     padding: 0;
     margin-bottom: 1rem;
   }
-  :global(ul li) {
-    display: contents;
-  }
   ul :global(a) {
     color: gray;
-    text-decoration: none;
     padding: 0.75rem 1rem;
-    border-bottom: 2px solid transparent;
+    margin-bottom: 1px solid transparent;
+    border-bottom: 1px solid gray;
   }
   ul :global(a[data-current-location]) {
     color: inherit;
     font-weight: bold;
+    margin-bottom: none;
     border-bottom: 2px solid rebeccapurple;
   }
   :global(ul a):hover {
