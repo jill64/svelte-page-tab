@@ -41,7 +41,7 @@
     "@sveltejs/adapter-cloudflare": "4.5.0",
     "@sveltejs/kit": "2.5.18",
     "svelte": "4.2.18",
-    "typescript": "5.5.2",
+    "typescript": "5.5.3",
     "vite": "5.3.2",
     "@sveltejs/vite-plugin-svelte": "3.1.1"
   },
@@ -55,7 +55,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/svelte-page-tab.git",
-    "image": "https://opengraph.githubassets.com/ec5dffe3bb5e32e57a69825bc42ff5847c87689fc3ca22e1a9c8c50f156e44bc/jill64/svelte-page-tab"
+    "image": "https://opengraph.githubassets.com/16f439a59852c4433051c17775819031ef61963b08d822b6f33f56c7713268a5/jill64/svelte-page-tab"
   },
   "license": "MIT",
   "bugs": "https://github.com/jill64/svelte-page-tab/issues",
