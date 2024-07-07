@@ -1,7 +1,7 @@
 {
   "name": "svelte-page-tab",
   "description": "🎹 Tab menu component that uses page as a state",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "main": "dist/index.js",
   "type": "module",
   "files": [
@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@jill64/eslint-config-svelte": "1.2.39",
-    "@jill64/npm-demo-layout": "1.0.228",
+    "@jill64/npm-demo-layout": "1.0.229",
     "@jill64/universal-sanitizer": "1.2.14",
     "@jill64/playwright-config": "2.4.0",
     "@jill64/prettier-config": "1.0.0",
@@ -55,7 +55,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/svelte-page-tab.git",
-    "image": "https://opengraph.githubassets.com/0b14537044fd0a395fc1ac4dba97053cdd62ef6a941940898e0a5cd095795d84/jill64/svelte-page-tab"
+    "image": "https://opengraph.githubassets.com/e504d9d0b4a1340206a8a71eac3829c902df6b880e0783f0b23a6f08a065e6f3/jill64/svelte-page-tab"
   },
   "license": "MIT",
   "bugs": "https://github.com/jill64/svelte-page-tab/issues",
