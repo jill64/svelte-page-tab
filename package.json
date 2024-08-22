@@ -43,7 +43,7 @@
     "svelte": "4.2.18",
     "typescript": "5.5.4",
     "vite": "5.4.2",
-    "@sveltejs/vite-plugin-svelte": "3.1.1"
+    "@sveltejs/vite-plugin-svelte": "3.1.2"
   },
   "homepage": "https://github.com/jill64/svelte-page-tab#readme",
   "author": {
@@ -55,7 +55,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/svelte-page-tab.git",
-    "image": "https://opengraph.githubassets.com/1f1a457a2ea4b8a096a3e017cdab344d4aa5dbd5f006a981b5783222038d6358/jill64/svelte-page-tab"
+    "image": "https://opengraph.githubassets.com/1af423c7882328f51ebdef6948fb7fdbb1b2ff0d8a40b81dfe0d704cc106e8e2/jill64/svelte-page-tab"
   },
   "license": "MIT",
   "bugs": "https://github.com/jill64/svelte-page-tab/issues",
