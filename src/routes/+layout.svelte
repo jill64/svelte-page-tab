@@ -1,14 +1,16 @@
 <script lang="ts">
-  import { page } from '$app/stores'
+  import { page } from '$app/state'
   import { TabItems } from '$lib'
   import { Layout } from '@jill64/npm-demo-layout'
   import README from '../../README.md?raw'
   import packageJson from '../../package.json'
+
+  let { children } = $props()
 </script>
 
 <Layout {packageJson} {README}>
   <p>
-    Current location : {$page.url.href}
+    Current location : {page.url.href}
   </p>
   <ul>
     <TabItems
@@ -20,7 +22,7 @@
       ])}
     />
   </ul>
-  <slot />
+  {@render children()}
 </Layout>
 
 <style>
