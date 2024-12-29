@@ -1,33 +1,45 @@
 <script lang="ts">
-  import { page } from '$app/stores'
+  import { page } from '$app/state'
+  import type { Snippet } from 'svelte'
 
   /** Map<href, label> */
-  export let routes: Map<string, string>
+  let {
+    routes,
+    prefix = '',
+    children
+  }: {
+    routes: Map<string, string>
+    prefix?: string
+    children?: Snippet<[string]>
+  } = $props()
 
-  export let prefix = ''
+  let mapped = $derived(
+    [...routes.entries()].map(([href, label]) => [prefix + href, label])
+  )
 
-  $: mapped = [...routes.entries()].map(([href, label]) => [
-    prefix + href,
-    label
-  ])
+  let spec = $derived(
+    [...mapped].sort(([a], [b]) => {
+      const depth = b.split('/').length - a.split('/').length
+      return depth === 0 ? b.length - a.length : depth
+    })
+  )
 
-  $: spec = [...mapped].sort(([a], [b]) => {
-    const depth = b.split('/').length - a.split('/').length
-    return depth === 0 ? b.length - a.length : depth
-  })
-
-  $: matched = spec.find(([href]) => {
-    const dist = new URL(href, $page.url.href)
-    return $page.url.href.startsWith(dist.origin + dist.pathname)
-  })?.[0]
+  let matched = $derived(
+    spec.find(([href]) => {
+      const dist = new URL(href, page.url.href)
+      return page.url.href.startsWith(dist.origin + dist.pathname)
+    })?.[0]
+  )
 </script>
 
 {#each mapped as [href, label]}
   <li>
     <a {href} data-current-location={href === matched ? true : null}>
-      <slot {label}>
+      {#if children}
+        {@render children(label)}
+      {:else}
         {label}
-      </slot>
+      {/if}
     </a>
   </li>
 {/each}

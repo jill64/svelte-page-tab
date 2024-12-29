@@ -5,7 +5,7 @@ export const code = /* html */ `
 
 <ul>
   <TabItems
-    prefix="/{$page.params.page}"
+    prefix="/{page.params.page}"
     routes={new Map([
       ["", "Overview"],
       ["/section1", "Section 1"],

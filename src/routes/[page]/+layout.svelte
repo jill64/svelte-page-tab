@@ -1,5 +1,5 @@
 <script>
-  import { page } from '$app/stores'
+  import { page } from '$app/state'
   import { TabItems } from '$lib'
   import { HighlightSvelte } from '@jill64/npm-demo-layout/highlight'
   import { code } from './code'
@@ -8,7 +8,7 @@
 <main>
   <ul>
     <TabItems
-      prefix="/{$page.params.page}"
+      prefix="/{page.params.page}"
       routes={new Map([
         ['', 'Overview'],
         ['/section1', 'Section 1'],
