@@ -55,11 +55,12 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/svelte-page-tab.git",
-    "image": "https://opengraph.githubassets.com/31fea52e2900def8c9969b5f42e9f51fe242f8c718caad47452b013cb7529869/jill64/svelte-page-tab"
+    "image": "https://opengraph.githubassets.com/9dcb6483ece42f38634057eaa94a7410271264d7d511d8ff22466b5d620e180b/jill64/svelte-page-tab"
   },
   "license": "MIT",
   "bugs": "https://github.com/jill64/svelte-page-tab/issues",
   "keywords": [
+    "library",
     "menu",
     "routing",
     "svelte",
