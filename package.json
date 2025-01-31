@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@jill64/eslint-config-svelte": "2.0.5",
-    "@jill64/npm-demo-layout": "2.0.13",
+    "@jill64/npm-demo-layout": "2.0.15",
     "@jill64/universal-sanitizer": "1.4.1",
     "@jill64/playwright-config": "2.4.2",
     "@jill64/prettier-config": "1.0.0",
@@ -55,7 +55,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/svelte-page-tab.git",
-    "image": "https://opengraph.githubassets.com/79e00d21bf13b7b4aa3b489d73e3303aaa563fa7d49078a58c6a27bd21f12aff/jill64/svelte-page-tab"
+    "image": "https://opengraph.githubassets.com/5491f62bea05bbdf5c754e0482729416250e7d04d31a88f68364a27dac3aec83/jill64/svelte-page-tab"
   },
   "license": "MIT",
   "bugs": "https://github.com/jill64/svelte-page-tab/issues",
