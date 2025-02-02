@@ -55,7 +55,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/svelte-page-tab.git",
-    "image": "https://opengraph.githubassets.com/14c0d22bc40b482ab7628db2ca50ba637938a0ca36f6fd289b6c3c894f35d03d/jill64/svelte-page-tab"
+    "image": "https://opengraph.githubassets.com/c847eb0cd2feb1029377e94bda4b690dad65a17665243c552c7676e108e73a8c/jill64/svelte-page-tab"
   },
   "license": "MIT",
   "bugs": "https://github.com/jill64/svelte-page-tab/issues",
