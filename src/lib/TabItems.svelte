@@ -32,7 +32,7 @@
   )
 </script>
 
-{#each mapped as [href, label]}
+{#each mapped as [href, label] (href)}
   <li>
     <a {href} data-current-location={href === matched ? true : null}>
       {#if children}
