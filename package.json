@@ -39,7 +39,7 @@
     "@playwright/test": "1.51.1",
     "@sveltejs/adapter-cloudflare": "5.1.0",
     "@sveltejs/kit": "2.20.4",
-    "svelte": "5.25.8",
+    "svelte": "5.25.9",
     "typescript": "5.8.3",
     "vite": "6.2.5",
     "@sveltejs/vite-plugin-svelte": "5.0.3"
