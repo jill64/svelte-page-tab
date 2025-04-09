@@ -38,7 +38,7 @@
     "@jill64/sentry-sveltekit-cloudflare": "2.0.6",
     "@playwright/test": "1.51.1",
     "@sveltejs/adapter-cloudflare": "5.1.0",
-    "@sveltejs/kit": "2.20.4",
+    "@sveltejs/kit": "2.20.5",
     "svelte": "5.25.9",
     "typescript": "5.8.3",
     "vite": "6.2.5",
