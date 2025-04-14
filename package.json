@@ -27,7 +27,7 @@
     "test:e2e": "playwright test"
   },
   "peerDependencies": {
-    "@sveltejs/kit": "^2.0.0",
+    "@sveltejs/kit": "^2.20.6",
     "svelte": "^5.0.0"
   },
   "devDependencies": {
@@ -38,7 +38,7 @@
     "@jill64/sentry-sveltekit-cloudflare": "2.0.6",
     "@playwright/test": "1.51.1",
     "@sveltejs/adapter-cloudflare": "5.1.0",
-    "@sveltejs/kit": "2.20.4",
+    "@sveltejs/kit": "2.20.6",
     "svelte": "5.26.3",
     "typescript": "5.8.3",
     "vite": "6.2.6",
@@ -54,7 +54,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/svelte-page-tab.git",
-    "image": "https://opengraph.githubassets.com/6d92c4998eee593d7cc09fa42a336997124cd6906d3435eef66b69dedfebfc4f/jill64/svelte-page-tab"
+    "image": "https://opengraph.githubassets.com/d4860c32a6e4d918f574a023331015bd1cdb66c53daaeec277fc73f4bebe7dc9/jill64/svelte-page-tab"
   },
   "license": "MIT",
   "bugs": "https://github.com/jill64/svelte-page-tab/issues",
