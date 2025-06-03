@@ -42,7 +42,7 @@
     "svelte": "5.26.3",
     "typescript": "5.8.3",
     "vite": "6.2.7",
-    "@sveltejs/vite-plugin-svelte": "5.0.3"
+    "@sveltejs/vite-plugin-svelte": "5.1.0"
   },
   "homepage": "https://github.com/jill64/svelte-page-tab#readme",
   "author": {
